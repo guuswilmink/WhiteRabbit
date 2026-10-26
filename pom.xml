@@ -394,18 +394,7 @@
         </resources>
     </build>
 
-	<!-- exclude "old" dependencies globally -->
 	<dependencies>
-		<!-- The "provided" for commons-io 2.13.0 below combined with a regular dependency for 2.20.0 is actually a trick to
-			prevent from being dragged in through other dependencies. This prevents us from having to add exclusions all
-			over the place. Unfortunately maven has no sense of efficiency or humor at all
-			and will complain about it -->
-		<dependency>
-			<artifactId>commons-io</artifactId>
-			<groupId>commons-io</groupId>
-			<version>2.13.0</version>
-			<scope>provided</scope>
-		</dependency>
 		<dependency>
 			<artifactId>commons-io</artifactId>
 			<groupId>commons-io</groupId>
